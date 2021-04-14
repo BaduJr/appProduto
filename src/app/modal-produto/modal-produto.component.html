@@ -1,0 +1,25 @@
+<h1 mat-dialog-title>Alterar Produto</h1>
+<form [formGroup]="produtoForm">
+  
+  <div mat-dialog-content>
+        <mat-form-field>
+            <mat-label>Nome</mat-label>
+            <input matInput required formControlName="nome">
+        </mat-form-field>
+    
+        <mat-form-field>
+            <mat-label>Preço</mat-label>
+            <input matInput required formControlName="preco">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Quantidade</mat-label>
+            <input matInput required formControlName="quantidade">
+        </mat-form-field>
+  </div>
+
+  <div mat-dialog-actions>
+    <button mat-raised-button (click)="cancelarOnClick()">Cancelar</button>
+    <button [disabled]="produtoForm.invalid" mat-raised-button color="primary" cdkFocusInitial (click)="alterarOnClick()">Alterar</button>
+  </div>
+</form>

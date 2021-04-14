@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { ProdutoService } from '../servicos/produto.service';
 
 @Component({
   selector: 'app-produto-cadastrar',
@@ -14,7 +15,8 @@ export class ProdutoCadastrarComponent implements OnInit {
   });
 
   constructor(
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private produtoService: ProdutoService
   ) { }
 
   ngOnInit(): void {
@@ -26,5 +28,10 @@ export class ProdutoCadastrarComponent implements OnInit {
   }
 
   saveOnClick(): void{
+    this.produtoService.salvar(this.produtoForm.value).subscribe(
+      res => {
+        alert('Produto cadastrado com sucesso');
+      }
+    );
   }
 }

@@ -18,12 +18,14 @@ import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSelectModule } from '@angular/material/select';
 import { ProdutoCadastrarComponent } from './produto-cadastrar/produto-cadastrar.component';
+import { ModalProdutoComponent } from './modal-produto/modal-produto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProdutoComponent,
-    ProdutoCadastrarComponent
+    ProdutoCadastrarComponent,
+    ModalProdutoComponent
   ],
   imports: [
     BrowserModule,
