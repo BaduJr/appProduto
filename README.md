@@ -1,27 +1,36 @@
 # AppProduto
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
+Aplicação web para uma loja virtual fictícia;
 
-## Development server
+# Tecnologias Utilizadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+	##Front-End
+	
+     - Typescript: v4.1.5
+	 - Angular CLI: v11.2.5
+	 - Angular-material: v11.2.8
+	 - IDE Visual Studio Code: v1.55.0
+	
+	##Back-End
+	
+	 - Visual Studio Community 2019: v16.7.7
+	 - Framework: EF .NET Core v3.1
+	 - SGBD: SQL Server Management Studio 2019 v18.4
+	 
+# Configuração
 
-## Code scaffolding
+A aplicação está hospedada nos servidores da Microsoft Azzure, não sendo necessária nenhuma configuração em ambientes locais para seu uso. A aplicação pode ser acessada através do link (https://appproduto.azurewebsites.net)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Utilização
 
-## Build
+1) Na barra superior de navegação, haverá duas opções de menu: Cadastrar Produto e Listar Produto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+2) O menu Cadastrar Produto é a página de cadastro de novos produtos. Contém um formulário para inserir as informações do produto
 
-## Running unit tests
+3) O menu Listar Produto é a página de listagem dos produtos. Contém uma tabela com os dados dos produtos cadastros na base de dados
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4) Para criar um novo produto, clique no menu Cadastrar Produto, preencha o formulário que se apresentará na tela e clique em Salvar
 
-## Running end-to-end tests
+5) Para alterar um produto, clique no menu Listar Produto. Clique no botão Alterar, altere os dados que se encontram no formulário e clique em Alterar
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+6) Para excluir um produto, clique no menu Listar Produto. Clique no botão Excluir e clique em Ok na janela de confirmação
