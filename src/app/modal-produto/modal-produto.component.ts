@@ -40,8 +40,18 @@ export class ModalProdutoComponent implements OnInit {
         this.produtoForm = this.formBuilder.group({
           id: [this.id],
           nome: [data.nome, Validators.required],
-          preco: [data.preco, Validators.required],
-          quantidade: [data.quantidade, Validators.required]
+          preco: [data.preco, 
+            [ 
+              Validators.required,
+              Validators.pattern('^[0-9]*$')
+            ]
+          ],
+          quantidade: [data.quantidade,
+            [ 
+              Validators.required,
+              Validators.pattern('^[0-9]*$')
+            ]
+          ]
         });
       }
     );

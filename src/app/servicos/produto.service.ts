@@ -6,7 +6,8 @@ import { Injectable } from '@angular/core';
 })
 export class ProdutoService {
 
-  private SERVER_URL = "http://localhost:21326/api/produto/";
+  //private SERVER_URL = "http://localhost:21326/api/produto/";
+  private SERVER_URL = "http://apiproduto.azurewebsites.net/api/produto/";
 
   constructor(private httpClient: HttpClient) { }
 
