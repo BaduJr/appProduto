@@ -4,6 +4,7 @@ import { ProdutoCadastrarComponent } from './produto-cadastrar/produto-cadastrar
 import { ProdutoComponent } from './produto/produto.component';
 
 const routes: Routes = [
+  { path: '', component: ProdutoComponent },
   { path: 'produto', component: ProdutoComponent },
   { path: 'produto-cadastrar', component: ProdutoCadastrarComponent }
 ];
